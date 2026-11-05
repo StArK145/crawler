@@ -1,6 +1,6 @@
 services:
   api:
-    image: ghcr.io/${GITHUB_REPOSITORY_OWNER}/frontend-compiler:latest
+    image: image: ghcr.io/stark145/frontend-compiler:latest
     ports:
       - "8000:8000"
     restart: always
