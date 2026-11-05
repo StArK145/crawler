@@ -24,7 +24,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/frontend-compiler:latest
+          tags: ghcr.io/stark145/frontend-compiler:latest
 
   deploy-to-ec2:
     needs: build-and-push
@@ -38,6 +38,6 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
             echo "${{ secrets.GITHUB_TOKEN }}" | sudo docker login ghcr.io -u ${{ github.actor }} --password-stdin
-            sudo docker pull ghcr.io/${{ github.repository_owner }}/frontend-compiler:latest
-            export GITHUB_REPOSITORY_OWNER=${{ github.repository_owner }}
+            sudo docker pull ghcr.io/stark145/frontend-compiler:latest
+            export GITHUB_REPOSITORY_OWNER=stark145
             sudo -E docker compose up -d --force-recreate
