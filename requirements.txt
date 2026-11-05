@@ -1,5 +1,7 @@
 ﻿fastapi
 uvicorn
 playwright
+playwright-stealth
+pydantic
 pytest
 numpy
