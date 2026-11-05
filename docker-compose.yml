@@ -1,6 +1,0 @@
-services:
-  api:
-    image: image: ghcr.io/stark145/frontend-compiler:latest
-    ports:
-      - "8000:8000"
-    restart: always
