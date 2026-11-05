@@ -1,0 +1,6 @@
+{
+    "assertions": {
+        "uses_100vw": true,
+        "root_requires_overflow_x_clip": true
+    }
+}

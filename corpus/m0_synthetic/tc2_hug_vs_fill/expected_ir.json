@@ -1,0 +1,25 @@
+{
+    "breakpoints": [
+        {
+            "width": 900,
+            "changes": {
+                "container": {
+                    "flex-direction": "row"
+                },
+                "btn": {
+                    "width_mode": "hug"
+                }
+            }
+        }
+    ],
+    "mobile_state": {
+        "btn": {
+            "width_mode": "fill"
+        }
+    },
+    "desktop_state": {
+        "btn": {
+            "width_mode": "hug"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "elements": [
+        {
+            "id": "box_a",
+            "margin_collapse_owner": "next_sibling",
+            "computed_margin_bottom": "32px"
+        },
+        {
+            "id": "box_b",
+            "computed_margin_top": "0px"
+        }
+    ],
+    "layout_assertions": {
+        "vertical_gap_between_a_b": "32px"
+    }
+}
